@@ -23,6 +23,7 @@
   display: flex;
   height: 180px;
   align-items: center;
+  margin-bottom: 20px;
 }
 .product-img{
   width: 100%;
@@ -52,6 +53,27 @@
 .product-quantity-container{
   height: 30px;
 }
+
+.add-to-cart-button{
+    background-color: rgb(255, 216, 20);
+    border-radius: 18px;
+    font-size: 15px;
+    border-color: #ffd814;
+    border-style: solid;
+    font-size: 15;
+    
+    cursor: pointer;
+    transition: background-color 0.10s,
+                border-color 0.10s;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  .add-to-cart-button:hover{
+    background-color: rgb(255, 190, 0);
+    border-color: rgb(255, 190, 0);
+  }
 
 
 
