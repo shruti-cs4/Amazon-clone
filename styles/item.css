@@ -6,11 +6,6 @@
   flex-direction: row;
 }
 
-.product-img{
-  height: 100%;
-}
-
-
 .item{
   display: flex;
   flex-direction: column;
@@ -25,10 +20,22 @@
 }
 
 .product-img-container{
+  display: flex;
   height: 180px;
+  align-items: center;
+}
+.product-img{
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.product-name{
+  height: 40px;
 }
 
 .product-rating-container{
+  height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,6 +43,14 @@
 .product-rating-img{
   margin-right: 5px;
   width: 120px;
+}
+
+.product-price{
+  height: 30px;
+}
+
+.product-quantity-container{
+  height: 30px;
 }
 
 
