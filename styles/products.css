@@ -1,4 +1,4 @@
-.item-container{
+.product-grid{
   margin-top: 70px;
   margin-left: 0;
   margin-right: 0;
@@ -6,7 +6,7 @@
   flex-direction: row;
 }
 
-.item{
+.product-container{
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -61,7 +61,6 @@
     border-color: #ffd814;
     border-style: solid;
     font-size: 15;
-    
     cursor: pointer;
     transition: background-color 0.10s,
                 border-color 0.10s;
