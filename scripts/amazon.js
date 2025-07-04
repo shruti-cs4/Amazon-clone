@@ -1,53 +1,3 @@
-const products = [{
-  image: 'items/products/athletic-cotton-socks-6-pairs.jpg',
-  name: 'Black and Grey Athletic Cotton Socks-6 Pairs',
-  rating: {
-    star: 4.5,
-    count: 86
-  },
-  priceCents: 1090 
-},{
-  image: 'items/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
-  name: 'Adults Plain Cotton T-Shirt - 2 Pack',
-  rating: {
-    star: 4.5,
-    count: 56
-  },
-  priceCents: 799
-},{
-  image: 'items/products/6-piece-white-dinner-plate-set.jpg',
-  name: '6 Piece White Dinner Plate Set',
-  rating: {
-    star: 4,
-    count: 37
-  },
-  priceCents: 2067
-}, {
-  image: 'items/products/black-2-slot-toaster.jpg',
-  name: '2 Slot Toaster - Black',
-  rating: {
-    star: 5,
-    count: 2197
-  },
-  priceCents: 1899
-},{
-  image: 'items/products/intermediate-composite-basketball.jpg',
-  name: 'Intermediate Size Basketball',
-  rating: {
-    star: 4,
-    count: 127
-  },
-  priceCents: 2095
-},{
-  image: 'items/products/6-piece-non-stick-baking-set.webp',
-  name: '6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set',
-  rating: {
-    star: 4.5,
-    count: 175
-  },
-  priceCents: 3499
-}];
-
 
 let productHTML = '';
 
@@ -83,8 +33,40 @@ products.forEach((product) => {
             <option value="1">10</option>
           </select>
         </div>
+        <button class="add-to-cart-button js-add-to-cart" data-product-id="${product.id}">
+          Add to Cart
+        </button>
       </div>`;
   productHTML += html;
 });
 
 document.querySelector('.js-product-grid').innerHTML = productHTML;
+
+document.querySelectorAll('.js-add-to-cart')
+  .forEach((button) => {
+    button.addEventListener('click', () => {
+      const productId = button.dataset.productId;
+      let matchingItem;
+      cart.forEach((item) => {
+        if(productId === item.productId){
+          matchingItem = item;
+        }
+      });
+      if(matchingItem){
+        matchingItem.quantity += 1;
+      }else{
+        cart.push({
+          productId: productId,
+          quantity: 1
+        })
+      }
+      let cartQuantity = 0;
+      cart.forEach((item) => {
+        cartQuantity += item.quantity;
+      })
+      document.querySelector('.cart-quantity').innerHTML = cartQuantity;
+      console.log(cartQuantity)
+      console.log(cart)
+  });
+
+});
