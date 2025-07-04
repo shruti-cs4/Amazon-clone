@@ -1,0 +1,112 @@
+.header{
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(19, 25, 33);
+  border-bottom-width: 1px;
+  background-color: rgb(19, 25, 33);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.amazon-logo{
+  height: 30px;
+}
+
+.middle-section{
+  flex: 1;
+  margin-left: 75px;
+  margin-right: 50px;
+  max-width: 850px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar{
+  flex: 1;
+  width: 0;
+  height: 36px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-bar::placeholder{
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.search-button{
+  height: 40px;
+  width: 60px;
+  border-width: 1px;
+  background-color: rgb(254, 189, 105);
+  border-style: solid;
+  border-color: rgb(254, 189, 105);
+  margin-left: -1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-icon{
+  height: 28px;
+}
+
+.right-section{
+  width: 160px;
+  display: flex;
+  flex-shrink: 0;
+  align-items:center;
+  justify-content: space-between; 
+}
+
+.order-link{
+  width: 60px;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+}
+.order-text{
+  font-weight: bold;
+}
+
+.cart-link{
+  width: 83px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3px;
+  color: white;
+  font-size: 15px;
+}
+.cart{
+  position: relative;
+}
+.cart-quantity{
+  font-weight: bold;
+  color: rgb(254, 189, 105);
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+}
+.cart-icon{
+  width: 100%;
+}
+.cart-text{
+  padding-top: 15px;
+  font-weight: bold;
+  font-family: Arial;
+}
