@@ -11,7 +11,7 @@ products.forEach((product) => {
           ${product.name}
         </div>
         <div class="product-rating-container">
-          <img class="product-rating-img" src="items/ratings/rating-${product.rating.star * 10}.png">
+          <img class="product-rating-img" src="items/ratings/rating-${product.rating.stars * 10}.png">
           <div class="product-rating-count">
             ${product.rating.count}
           </div>
