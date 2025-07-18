@@ -1,3 +1,4 @@
+export {cart} from '../data/cart';
 
 let productHTML = '';
 
