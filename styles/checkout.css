@@ -1,0 +1,18 @@
+.header{
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 20px;
+  right: 150px;
+  left: 200px;
+}
+
+.amazon-logo{
+  height: 30px;
+}
+
+.middle-section{
+  font-size: 25px;
+}
