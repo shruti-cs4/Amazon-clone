@@ -16,3 +16,26 @@
 .middle-section{
   font-size: 25px;
 }
+
+.main{
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-right: 400px;
+}
+
+.cartItem-container{
+  height: 300px;
+  border: 4px solid black;
+  margin-bottom: 50px;
+}
+
+.delivery-date{
+  margin-bottom: 20px;
+}
+
+.cartItem-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}

@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<head>
-  <title>
-    checkout
-  </title>
-  <link rel="stylesheet" href="styles/checkout.css">
-</head>
+import {cart} from "../data/cart.js";
+import {products} from "../data/productData.js";
 
+cart.forEach((cartItem) => {
 
-<body>
-  <div class="header">
-    <div class="left-section">
-      <img src="images/icons/amazon-logo.png" class="amazon-logo">
-    </div>
-    <div class="middle-section">
-      <span>Checkout</span>
-    </div>
-    <div class="right-section">
-      <img src="images/icons/checkout-lock-icon.png">
-    </div>
-  </div>
-
-  <div class="main">
-    <p> <h2>Review your order</h2> </p>
-
+  `
     <div class="cartItem-container">
       <p class="delivery-date">Delivery date:</p>
       <div class="cartItem-grid">
@@ -57,7 +38,7 @@
           </div>
 
           <div class="delivery-option">
-            <input type="radio" class="delivery-option-input">
+            <input type="radio" checked class="delivery-option-input">
             <div>
               <div class="delivery-option-date">
                       Tuesday, June 21
@@ -69,7 +50,7 @@
           </div>
 
           <div class="delivery-option">
-            <input type="radio" class="delivery-option-input">
+            <input type="radio" checked class="delivery-option-input">
             <div>
               <div class="delivery-option-date">
                       Tuesday, June 21
@@ -81,11 +62,8 @@
           </div>
 
         </div>
-        
-
       </div>
     </div>
-
-
-  <script type="module" src="scripts/checkout.js"></script>
-</body>
+    
+  `
+});
