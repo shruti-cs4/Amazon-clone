@@ -4,9 +4,13 @@
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  top: 20px;
-  right: 150px;
-  left: 200px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 150px;
+  padding-left: 200px;
+  background-color: white;
 }
 
 .amazon-logo{
@@ -25,17 +29,78 @@
 
 .cartItem-container{
   height: 300px;
-  border: 4px solid black;
+  border: 1px solid rgb(169, 168, 168);
+  border-radius: 5px;
   margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .delivery-date{
+  font-size: 20px;
   margin-bottom: 20px;
+  color: rgb(0,118,0);
+  font-weight: bold;
 }
 
 .cartItem-grid{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  
+}
+
+.product-image{
+  height: 100px;
+}
+
+.cartItem-name{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cartItem-price{
+  color: rgb(177,39,4);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.delivery-options{
+  width : 250px;
+
+}
+
+.delivery-option-title{
+  font-weight: bold;
+}
+
+.delivery-option-date{
+  display: block;
+  color: rgb(0,118,0);
+}
+
+.delivery-option-price{
+  display: block;
+}
+
+
+
+
+
+
+
+
+.checkout{
+  display: grid;
+  grid-template-columns: 700px 350px;
+  gap: 20px;
+}
+
+
+.js-order-summary{
+  border: 1px solid rgb(169, 168, 168);
+  height: 400px;
+
   
 }

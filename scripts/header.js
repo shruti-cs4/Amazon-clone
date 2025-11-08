@@ -1,6 +1,6 @@
 const headerHTML = `      
       <div class="left-section">
-        <a class="homepage-link">
+        <a class="homepage-link" href="amazon.html">
           <img src="images/icons/amazon-logo-white.png" class="amazon-logo">
         </a>
       </div>

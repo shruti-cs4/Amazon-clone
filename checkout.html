@@ -10,7 +10,9 @@
 <body>
   <div class="header">
     <div class="left-section">
+      <a class="homepage-link" href="amazon.html">
       <img src="images/icons/amazon-logo.png" class="amazon-logo">
+      </a>
     </div>
     <div class="middle-section">
       <span>Checkout</span>
@@ -23,68 +25,13 @@
   <div class="main">
     <p> <h2>Review your order</h2> </p>
 
-    <div class="cartItem-container">
-      <p class="delivery-date">Delivery date:</p>
-      <div class="cartItem-grid">
-        <img class="product-image" src="">
 
-        <div class="cartItem-Details">
-          <div class="cartItem-name">product-name</div>
-          <div class="cartItem-price">price</div>
-          <div class="cartItem-Quantity">
-            <span>
-              Quantity: <span>1</span>
-            </span>
-            <span>update</span>
-            <span>delete</span>
-          </div>
-        </div>
-        
-        <div class="delivery-options">
-          <div class="delivery-option-title">
-            choose a delivery option:
-          </div>
-          <div class="delivery-option">
-            <input type="radio" checked class="delivery-option-input">
-            <div>
-              <div class="delivery-option-date">
-                      Tuesday, June 21
-              </div>
-              <div class="delivery-option-price">
-                FREE Shipping
-              </div>
-            </div>
-          </div>
-
-          <div class="delivery-option">
-            <input type="radio" class="delivery-option-input">
-            <div>
-              <div class="delivery-option-date">
-                      Tuesday, June 21
-              </div>
-              <div class="delivery-option-price">
-                FREE Shipping
-              </div>
-            </div>
-          </div>
-
-          <div class="delivery-option">
-            <input type="radio" class="delivery-option-input">
-            <div>
-              <div class="delivery-option-date">
-                      Tuesday, June 21
-              </div>
-              <div class="delivery-option-price">
-                FREE Shipping
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-
-      </div>
+    <div class="checkout">
+      <div class="js-cartItem-grid"></div>
+      <div class="js-order-summary"></div>
     </div>
+    
+
 
 
   <script type="module" src="scripts/checkout.js"></script>

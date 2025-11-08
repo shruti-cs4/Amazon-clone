@@ -30,8 +30,7 @@ export function updateCartQuantity (){
   cart.forEach((cartItem) => {
     cartQuantity += cartItem.quantity;
   })
-  document.querySelector('.cart-quantity')
-    .innerHTML = cartQuantity;
+  return cartQuantity;
 }
 
 

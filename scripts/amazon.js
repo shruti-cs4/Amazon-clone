@@ -50,6 +50,8 @@ document.querySelectorAll('.js-add-to-cart')
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
       addToCart(productId);
-      updateCartQuantity();
+      const updatedQuantity = updateCartQuantity();
+      document.querySelector('.cart-quantity')
+        .innerHTML = updatedQuantity;
     });
   });
