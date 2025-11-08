@@ -66,7 +66,7 @@ cart.forEach((cartItem) => {
 
         <div class="cartItem-Details">
           <div class="cartItem-name">${productName}</div>
-          <div class="cartItem-price">$ ${productPrice/100}</div>
+          <div class="cartItem-price">$ ${(productPrice/100).toFixed(2)}</div>
           <div class="cartItem-Quantity">
             <span>
               Quantity: <span>${cartItem.quantity}</span>
@@ -81,18 +81,20 @@ cart.forEach((cartItem) => {
             Choose a delivery option:
           </div>
           <div class="delivery-option">
-            <input type="radio" checked class="delivery-option-input">
-            <div class="delivery-option-date">
-                    Monday, November 17
-            </div>
-            <div class="delivery-option-price">
-              FREE Shipping 
+            <input type="radio" class="delivery-option-input" name="${cartItem.id}">
+            <div class="delivery-details">
+              <div class="delivery-option-date">
+                      Monday, November 17
+              </div>
+              <div class="delivery-option-price">
+                FREE Shipping 
+              </div>
             </div>
           </div>
 
           <div class="delivery-option">
-            <input type="radio" checked class="delivery-option-input">
-            <div>
+            <input type="radio" class="delivery-option-input" name="${cartItem.id}">
+            <div class="delivery-details">
               <div class="delivery-option-date">
                       Thursday, November 13
               </div>
@@ -103,8 +105,8 @@ cart.forEach((cartItem) => {
           </div>
 
           <div class="delivery-option">
-            <input type="radio" checked class="delivery-option-input">
-            <div>
+            <input type="radio" class="delivery-option-input" name="${cartItem.id}">
+            <div class="delivery-details">
               <div class="delivery-option-date">
                       Tuesday, November 11
               </div>

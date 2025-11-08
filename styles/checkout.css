@@ -72,8 +72,16 @@
 }
 
 .delivery-options{
-  width : 250px;
+  width : 200px;
+}
 
+.delivery-details{
+  display: inline-block;
+  margin: 10px;
+}
+
+.delivery-option-input{
+  display: inline-block;
 }
 
 .delivery-option-title{
