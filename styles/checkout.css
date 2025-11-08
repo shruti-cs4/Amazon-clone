@@ -13,12 +13,17 @@
   background-color: white;
 }
 
+
 .amazon-logo{
   height: 30px;
 }
 
 .middle-section{
   font-size: 25px;
+}
+
+.header-item{
+  color: rgb(0, 113, 133);
 }
 
 .main{
@@ -86,11 +91,6 @@
 
 
 
-
-
-
-
-
 .checkout{
   display: grid;
   grid-template-columns: 700px 350px;
@@ -99,8 +99,60 @@
 
 
 .js-order-summary{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
   border: 1px solid rgb(169, 168, 168);
-  height: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  
+.order-heading{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.items-text, .shipping-charges-text, .total-B-tax-text, .E-tax-text, .order-total-text{
+  width: 220px;
+  display: inline-block;
+}
+
+.TBT-value, .items-value, .SC-value, .ET-value, .OT-value{
+
+  display: inline;
+}
+
+.TBT-value{
+  border-top: 1px solid rgb(191, 189, 189);
+}
+
+.order-total{
+  border-top: 1px solid rgb(191, 189, 189);
+  color: rgb(177,39,4);
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.order-button{
+  background-color: rgb(255, 216, 20);
+  border-radius: 7px;
+  font-size: 15px;
+  border-color: #f1cb0a;
+  border-style: solid;
+  font-size: 15;
+  cursor: pointer;
+  transition: background-color 0.10s,
+              border-color 0.10s;
+  width: 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
