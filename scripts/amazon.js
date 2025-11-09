@@ -1,6 +1,7 @@
 import {cart, addToCart, updateCartQuantity} from '../data/cart.js';
 import {products} from '../data/productData.js';
 
+
 let productHTML = '';
 const options = `<option value="1">1</option>
                 <option value="1">2</option>

@@ -1,4 +1,4 @@
-import {cart, updateCartQuantity, removeFromCart} from "../data/cart.js";
+import {cart, removeFromCart, updateCartQuantity} from "../data/cart.js";
 import {products} from "../data/productData.js";
 
 
@@ -51,8 +51,8 @@ const orderHTML = `
 `;
 
 cart.forEach((cartItem) => {
-
   const product = products.find(p => p.id === cartItem.id);
+
   const productImage = product.image;
   const productName = product.name;
   const productPrice = product.priceCents;
