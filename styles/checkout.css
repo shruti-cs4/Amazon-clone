@@ -1,3 +1,7 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .header{
   height: 57px;
   display: flex;
@@ -72,20 +76,32 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 .update-quantity-link{
   color: rgb(0, 113, 133);
 }
+.update-quantity-link:hover{
+  color: rgb(216, 89, 25);
+}
 
 .quantity-input{
+  display: none;
   width: 30px;
 }
 
 .save-quantity-link{
+  display: none;
   color: rgb(1, 113, 133);
+}
+.save-quantity-link:hover{
+  color: rgb(216, 89, 25);
 }
 
 .delete-quantity-link{
   color: rgb(0, 113, 133);
+}
+.delete-quantity-link:hover{
+  color: rgb(216, 89, 25);
 }
 
 .delivery-options{
@@ -113,8 +129,6 @@
 .delivery-option-price{
   display: block;
 }
-
-
 
 .checkout{
   display: grid;

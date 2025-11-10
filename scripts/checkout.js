@@ -72,7 +72,8 @@ cart.forEach((cartItem) => {
             <span>
               Quantity: <span>${cartItem.quantity}</span>
             </span>
-            <span class="update-quantity-link js-update-link"  data-product-id="${cartItem.id}">update</span>
+            <span class="update-quantity-link js-update-link 
+            UP-${cartItem.id}"  data-product-id="${cartItem.id}">update</span>
             <span class="delete-quantity-link js-delete-link" data-product-id="${cartItem.id}">delete</span>
           </div>
         </div>
@@ -149,12 +150,31 @@ document.querySelectorAll('.js-update-link')
       const productId = link.dataset.productId;
       const updateHTML = `
         <input class="quantity-input QI-${productId}">
-        <span class="save-quantity-link">save</span>
+        <span class="save-quantity-link SQ-${productId}">save</span>
       `;
       if(!(document.querySelector(`.QI-${productId}`))){
         link.insertAdjacentHTML('afterend', updateHTML);
       }
-      
-      console.log(productId);
+      const updateLink = document.querySelector(`.UP-${productId}`);
+      const inputLink = document.querySelector(`.QI-${productId}`);
+      const saveLink = document.querySelector(`.SQ-${productId}`);
+      updateLink.style.display = 'none';
+      inputLink.style.display = 'inline';
+      saveLink.style.display = 'inline';
+      document.querySelectorAll('.save-quantity-link')
+        .forEach((link) =>{
+          link.addEventListener('click', () => {
+            document.querySelector(`.SQ-${productId}`).style.display = 'none';
+            document.querySelector(`.QI-${productId}`).style.display = 'none';
+            document.querySelector(`.UP-${productId}`).style.display = 'inline';
+
+          });
+        });
     });
   });
+
+
+  
+
+
+
